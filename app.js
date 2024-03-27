@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var AlcoholRouter = require('./routes/Alcohol');
 var gridRouter = require('./routes/grid');
+var pickRouter = require('./routes/pick');
 
 
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/Alcohol', AlcoholRouter);
 app.use('/grid',gridRouter);
+app.use('/pick',pickRouter);
 
 
 
