@@ -7,6 +7,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var AlcoholRouter = require('./routes/Alcohol');
+var gridRouter = require('./routes/grid');
+
 
 
 var app = express();
@@ -24,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/Alcohol', AlcoholRouter);
+app.use('/grid',gridRouter);
+
 
 
 
