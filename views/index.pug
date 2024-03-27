@@ -9,3 +9,14 @@ block content
   link(rel='stylesheet', href='/stylesheets/style.css')
   p This is Gowtam kanumilli and My Favourite song is shape of you
   button(type="button", class="btn btn-success") I am a button
+
+  div#double Up the amount.
+  script.
+    var value = 0;
+    var power = 1;
+    function double() {
+      value = value + 1;
+      power = power * 2;
+      document.getElementById('double').innerHTML = Two to the power ${value} is ${power}.;
+    }
+      a(href='/herbs') Back to Search Results
